@@ -129,13 +129,13 @@ function slalom(car){
 }
 
 
-
-/* function slalom(car){
-    while(true){
-        if(!sensor(bike)){
-            forwardUntilWall;
-        }
-
-
-    }
-}*/
+function leftOrRight(car) {
+    turnLeft(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnLeft(car);
+    forwardUntilWall(car);
+}
